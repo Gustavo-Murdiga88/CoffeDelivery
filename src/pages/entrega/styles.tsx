@@ -5,6 +5,15 @@ export const ContainerDelivery = styled.div`
   flex-direction: column;
   gap: 2.5rem;
   padding: 2rem;
+  height: calc(100vh - 8rem);
+  width: auto;
+
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
   @media (max-width: 700px) {
     padding: 0;
   }
@@ -37,6 +46,8 @@ export const ContainerDelivery = styled.div`
         flex: 1;
         max-height: 16rem;
       }
+
+      gap: 3rem;
     }
   }
 
